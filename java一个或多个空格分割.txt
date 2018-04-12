@@ -1,0 +1,14 @@
+待分割字符串为如下：
+String str = "a  b     c  d e f      g";
+
+正确代码如下：
+String [] arr = str.split("\\s+");
+for(String ss : arr){
+    System.out.println(ss);
+}
+
+作为对比，错误代码如下：
+String [] arr2 = str.split(" ");
+for(String ss : arr2){
+    System.out.println(ss);
+}
